@@ -1,0 +1,13 @@
+{% for user in users %}
+    {{ user }}
+    <div>
+        <button type="button" class="btn btn-default" aria-label="Edit"
+                onclick="fill_form({{ user.id }})">
+            <i class="fa fa-pencil-square" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Delete"
+                onclick="del_user({{ user.id }})">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
+    </div>
+{% endfor %}

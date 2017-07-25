@@ -1,0 +1,30 @@
+{% extends "base_goods.html" %}
+{% block content %}
+    {% for iwatch in object_list %}
+        {% if iwatch.category.name == 'iWatch' %}
+        <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+            <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; padding-bottom: 0px">
+                <div class="container-fluid">
+                    <div class="hero7sm hidden-lg hidden-md">
+                        <h1 class="mactext" style="font-size: 38px"><i class="fa fa-apple" aria-hidden="true"></i>{{ iwatch.head }}</h1>
+                        <h2 class="mactext" style="font-size: 26px; padding-left: 3vw">{{ iwatch.text|safe }}</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="jumbotron watchs2lg hidden-xs hidden-sm hidden-md" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; background-image: url('/static/img/iwatch/{{ iwatch.img_lg }}'">
+                <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
+                    <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ iwatch.head }}</h1>
+                    <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ iwatch.text|safe }}</h2>
+                </div>
+            </div>
+            <div class="jumbotron watchs2md hidden-xs hidden-sm hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; background-image: url('/static/img/iwatch/{{ iwatch.img_md }}'">
+                <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
+                    <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ iwatch.head }}</h1>
+                    <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ iwatch.text|safe }}</h2>
+                </div>
+            </div>
+            <div class="jumbotron watchs2sm hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; background-image: url('/static/img/iwatch/{{ iwatch.img_sm }}'"></div>
+        {% endif %}
+{% endfor %}
+{% endblock %}

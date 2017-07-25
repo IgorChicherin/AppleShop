@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+        <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; padding-bottom: 0px;">
+            <div class="container">
+                <h3 class="text-center">Contact</h3>
+                <p class="text-center"><em>We love our fans!</em></p>
+                <div class="row test">
+                    <div class="col-md-4">
+                        <p>Fan? Drop a note.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+                        <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WaIrHu4ZEpEiEk0twAFxBl6P2jQUfnZt&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    </div>
+{% endblock %}

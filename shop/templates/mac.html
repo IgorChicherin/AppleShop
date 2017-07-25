@@ -1,0 +1,22 @@
+{% extends "base_goods.html" %}
+{% block content %}
+    {% for item in object_list %}
+        {% if item.category.name == 'Mac' %}
+            <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+            <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; padding-bottom: 0px">
+                <div class="container-fluid">
+                    <div class="hero7lg hidden-xs hidden-sm">
+                        <h1 class="mactext">{{ item.head }}</h1>
+                        <h2 class="mactext" style="font-size: 40px">{{ item.text|safe }}</h2>
+                    </div>
+                    <div class="hero7sm hidden-lg hidden-md">
+                        <h1 class="mactext" style="font-size: 22px">{{ item.head }}</h1>
+                        <h2 class="mactext" style="font-size: 38px">{{ item.text|safe }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="jumbotron piclg hidden-xs hidden-sm" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee;  background-image: url('/static/img/mac/{{ item.img_lg }}')"></div>
+            <div class="jumbotron picsm hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; background-image: url('/static/img/mac/{{ item.img_sm }}')"></div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
