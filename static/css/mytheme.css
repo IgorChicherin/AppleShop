@@ -1,0 +1,425 @@
+html,
+body {
+    height: 100%;
+}
+
+#container {
+    padding-bottom: 100px;
+}
+
+#footer {
+    height: 50px;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel {
+    height: 80%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+!important;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+.navbar-brand > i {
+    font-size: 2em;
+}
+
+.navbar-brand {
+    padding: 6px 15px;
+}
+
+.navbar-inverse {
+    opacity: .9;
+}
+
+.dropdown-toggle > i {
+    font-size: 2em;
+    margin-top: -7px;
+}
+
+.dropdown-menu i {
+    color: #5173ff;
+    margin-right: 10px;
+}
+
+.caret {
+    margin-top: 19%;
+}
+
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    display: block;
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.jumbotron h1, h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #eee;
+}
+
+.jumbotron h2 {
+    font-size: 64px;
+}
+
+.jumbotron {
+    background-color: #000;
+}
+
+.hero7lg {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.iphone7small {
+    width: 100%;
+    height: 100%;
+}
+
+.iphone7text {
+    text-align: center;
+    color: #eee;
+}
+
+.iphone7text > p {
+    width: 82%;
+    color: #eee;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.badgeblock {
+    position: relative;
+    width: 520px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.badgeblock p {
+    font-size: 14px;
+    color: #eee;
+    width: 104%;
+    text-align: center;
+}
+
+.badgeblock img {
+    margin: 0 auto;
+}
+
+.designtext > h2 {
+    font-size: 24px;
+}
+
+.designtext h3 {
+    font-size: 48px;
+    text-align: center;
+    color: #eee;
+}
+
+.DesNewColors, .DesProdRed, .DesWaterproof, .DesHomeButton {
+    float: left;
+    margin: 0 auto;
+    width: 110px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.DesNewColors img, .DesProdRed img, .DesWaterproof img, .DesHomeButton img {
+    margin-left: 37px;
+    margin-bottom: 10px;
+}
+
+.design {
+    margin: 0 auto;
+}
+
+.desbgcolorlg {
+    height: 1233px;
+    background-image: url("../img/iphone7/design_hero_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.desbgcolorsm {
+    height: 827px;
+    background-image: url("../img/iphone7/design_hero_small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.badgeblocksm {
+    position: relative;
+    width: 288px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.badgeblocksm p {
+    font-size: 14px;
+    color: #eee;
+    width: 104%;
+    text-align: center;
+}
+
+.desbgcameralg {
+    height: 800px;
+    background-image: url('../img/iphone7/camera_hero_large.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.desbgcamerasm {
+    height: 700px;
+    background-image: url('../img/iphone7/camera_hero_small.jpg');
+    background-repeat: no-repeat;
+    background-position: 3% 100%;
+    background-size: contain;
+}
+
+.buybtn {
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    font-size: 12px;
+    color: white;
+    margin-top: 11px;
+    background-color: #5173ff;
+    border-color: transparent;
+}
+
+.buybtn:hover {
+    background-color: #668BFF;
+    border-color: transparent;
+    color: white;
+}
+
+.mactext {
+    color: #333 !important;
+}
+
+.macbooklg {
+    background-image: url('../img/mac/macbookpro_large.png');
+}
+
+.macbooksm {
+    background-image: url('../img/mac/macbookpro_small.png');
+}
+
+.imaclg {
+    background-image: url('../img/mac/imac_large.png');
+}
+
+.imacsm {
+    background-image: url('../img/mac/imac_small.png');
+}
+
+.comparemaclg {
+    background-image: url('../img/mac/compare_large.png');
+}
+
+.comparemacsm {
+    background-image: url('../img/mac/compare_small.png');
+}
+
+.ipadprolg{
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ipadpromd{
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ipadprosm{
+    /*background-image: url("../img/ipad/ipadpro_small.jpg");*/
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ipadlg{
+    height: 1164px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/ipad/ipad_large.jpg");
+}
+
+.ipadmd{
+     background-image: url("../img/ipad/ipad_medium.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 550px;
+}
+
+.ipadsm{
+    background-image: url("../img/ipad/ipad_small.jpg");
+    height: 273px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.watchs2lg{
+    height: 100vh;
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-image: url("../img/iwatch/hero_activity_rings_large.jpg");*/
+}
+
+.watchs2md{
+     /*background-image: url("../img/iwatch/hero_activity_rings_medium.jpg");*/
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+    height: 80vh;
+    width: 99vw;
+}
+
+.watchs2sm{
+    /*background-image: url("../img/iwatch/hero_activity_rings_small.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 99vw;
+}
+
+.watchs1lg{
+    height: 100vh;
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-image: url("../img/iwatch/series_one_large.jpg");*/
+}
+
+.watchs1md{
+     height: 35vh;
+     width: 99vw;
+     /*background-image: url("../img/iwatch/series_one_medium.jpg");*/
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+.watchs1sm{
+    height: 60vh;
+    width: 99vw;
+    /*background-image: url("../img/iwatch/series_one_small.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) and (min-device-width: 768px) and (max-device-width: 991px){
+    .ipadprosm{
+        background-image: url("../img/ipad/ipadpro_medium.jpg");
+        height: 450px;
+    }
+
+    .buybtn{
+        left: 82vw;
+    }
+
+    .picsm{
+        height: 240px;
+    }
+
+    .ipadsm{
+        background-image: url("../img/ipad/ipad_medium.jpg");
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        height: 550px !important;
+    }
+}
+
+.piclg {
+    height: 672px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.picsm {
+    height: 173px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#loginH3{
+    text-align: center;
+    padding-left: 3%;
+}
+
+#pdw{
+    margin-top: 8px;
+}
+
+#logn{
+    margin-right: 27px;
+}
+
+#login-form{
+    margin-left: 36%;
+}
+
+#login-container{
+    padding-bottom: 25px;
+}
+
+#pdwinput{
+    margin-right: 16px;
+}
+
+#login-btn{
+    display: block;
+    margin-top: 8px;
+    margin-left: 21%;
+}
+
+#create-lnk{
+     padding-left: 13%;
+}
+
+#create-btn{
+    margin-top: 10px;
+    margin-left: 27%;
+}
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+.navmenu {
+    margin-top: 100px;
+    width: 200px;
+}
