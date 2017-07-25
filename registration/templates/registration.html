@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <div style="margin: 70px auto; margin-left: 29%;">
+        <form method="post" action="/registration/" role="form">
+            {% include 'inc-registration-form.html' %}
+            <br>
+            <input type="submit" class="btn-btn-default" id="create-btn" value="Создать">
+        </form>
+    </div>
+{% endblock %}
