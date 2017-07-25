@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container" style="height: 86.2vh;">
+        <div style="margin-top: 80px;">
+            <ol class="breadcrumb">
+                <li><a href="/admin">Пользователи</a></li>
+                <li><a href="/admin/categories/">Категории</a></li>
+                <li><a href="/admin/content/">Товары</a></li>
+            </ol>
+        </div>
+        <script src="/static/js/admin.js"></script>
+        <div class="row" style="margin-top: 80px">
+            <div class="col-md-2">
+                Пользователи:
+                <ul id="user_list">
+                    {% include 'inc-user-list.html' %}
+                </ul>
+            </div>
+            <form id="usr_form">
+                <div>{% include 'inc-registration-form.html' %}</div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

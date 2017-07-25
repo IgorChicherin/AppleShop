@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <script src="/static/js/admin.js"></script>
+    <div class="container" style="padding-top: 80px; padding-bottom: 40px;  height: 86.2vh;">
+        <div style="margin-top: 80px;">
+            <ol class="breadcrumb">
+                <li><a href="/admin">Пользователи</a></li>
+                <li><a href="/admin/categories/">Категории</a></li>
+                <li><a href="/admin/content/">Товары</a></li>
+            </ol>
+        </div>
+        <table class="table">
+            <tr>
+                <th>
+                    Название
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            {% for item in object_list %}
+                <tr>
+                    <td>
+                        <p>{{ item.name }}</p>
+                    </td>
+                    <td>
+                        <a href="preview/{{ item.id }}" class="btn btn-info">Просмотр</a>
+                    </td>
+                    <td>
+                        <a href="edit/{{ item.id }}" class="btn btn-default">Редактировать</a>
+                    </td>
+                    <td>
+                        <form id="del_item_form">
+                            <button href="delete_content/{{ item.id }}" class="btn btn-danger" onclick="del_item_content({{ item.id }})">Удалить</button>
+                        </form>
+
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="add/" class="btn btn-default">Добавить</a>
+    </div>
+{% endblock %}
