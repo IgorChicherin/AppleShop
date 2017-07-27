@@ -60,3 +60,4 @@ function del_item_content(id) {
         }
     })
 }
+

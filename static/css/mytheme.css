@@ -151,7 +151,7 @@ body {
 
 .desbgcolorlg {
     height: 1233px;
-    background-image: url("../img/iphone7/design_hero_large.jpg");
+    background-image: url("../img/design_hero_large.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -159,7 +159,7 @@ body {
 
 .desbgcolorsm {
     height: 827px;
-    background-image: url("../img/iphone7/design_hero_small.jpg");
+    background-image: url("../img/design_hero_small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,14 +181,14 @@ body {
 
 .desbgcameralg {
     height: 800px;
-    background-image: url('../img/iphone7/camera_hero_large.jpg');
+    background-image: url('../img/camera_hero_large.jpg');
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
 
 .desbgcamerasm {
     height: 700px;
-    background-image: url('../img/iphone7/camera_hero_small.jpg');
+    background-image: url('../img/camera_hero_small.jpg');
     background-repeat: no-repeat;
     background-position: 3% 100%;
     background-size: contain;
@@ -216,27 +216,27 @@ body {
 }
 
 .macbooklg {
-    background-image: url('../img/mac/macbookpro_large.png');
+    background-image: url('../img/macbookpro_large.png');
 }
 
 .macbooksm {
-    background-image: url('../img/mac/macbookpro_small.png');
+    background-image: url('../img/macbookpro_small.png');
 }
 
 .imaclg {
-    background-image: url('../img/mac/imac_large.png');
+    background-image: url('../img/imac_large.png');
 }
 
 .imacsm {
-    background-image: url('../img/mac/imac_small.png');
+    background-image: url('../img/imac_small.png');
 }
 
 .comparemaclg {
-    background-image: url('../img/mac/compare_large.png');
+    background-image: url('../img/compare_large.png');
 }
 
 .comparemacsm {
-    background-image: url('../img/mac/compare_small.png');
+    background-image: url('../img/compare_small.png');
 }
 
 .ipadprolg{
@@ -266,18 +266,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("../img/ipad/ipad_large.jpg");
+    background-image: url("../img/ipad_large.jpg");
 }
 
 .ipadmd{
-     background-image: url("../img/ipad/ipad_medium.jpg");
+     background-image: url("../img/ipad_medium.jpg");
      background-size: cover;
      background-repeat: no-repeat;
      height: 550px;
 }
 
 .ipadsm{
-    background-image: url("../img/ipad/ipad_small.jpg");
+    background-image: url("../img/ipad_small.jpg");
     height: 273px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,7 +341,7 @@ body {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) and (min-device-width: 768px) and (max-device-width: 991px){
     .ipadprosm{
-        background-image: url("../img/ipad/ipadpro_medium.jpg");
+        background-image: url("../img/ipadpro_medium.jpg");
         height: 450px;
     }
 
@@ -354,7 +354,7 @@ and (max-device-width : 1024px) and (min-device-width: 768px) and (max-device-wi
     }
 
     .ipadsm{
-        background-image: url("../img/ipad/ipad_medium.jpg");
+        background-image: url("../img/ipad_medium.jpg");
         background-size: cover !important;
         background-repeat: no-repeat !important;
         height: 550px !important;

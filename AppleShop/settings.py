@@ -130,7 +130,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'img', 'mac')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'img')
 MEDIA_URL = '/media/'
 
 LOGIN_URL = '/auth/login/'

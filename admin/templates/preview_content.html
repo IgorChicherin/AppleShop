@@ -16,7 +16,7 @@
         </div>
         <div class="jumbotron piclg hidden-xs hidden-sm" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee;  background-image: url('/static/img/mac/{{ object.img_lg }}')"></div>
         <div class="jumbotron picsm hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; background-image: url('/static/img/mac/{{ object.img_sm }}')"></div>
-        {% elif object.category.name == 'iPad' %}
+    {% elif object.category.name == 'iPad' %}
         {% if object.zindex %}
             <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
             <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #fafafa; padding-bottom: 0px">
@@ -59,29 +59,29 @@
             <div class="jumbotron ipadmd  hidden-xs hidden-sm hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; background-image: url('/static/img/ipad/{{ object.img_md }}')"></div>
             <div class="jumbotron ipadsm  hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-color: #eee; background-image: url('/static/img/ipad/{{ object.img_sm }}')"></div>
             {% endif %}
-        {% else %}
-            <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
-            <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; padding-bottom: 0px">
-                <div class="container-fluid">
-                    <div class="hero7sm hidden-lg hidden-md">
-                        <h1 class="mactext" style="font-size: 38px"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
-                        <h2 class="mactext" style="font-size: 26px; padding-left: 3vw">{{ object.text|safe }}</h2>
-                    </div>
+    {% else %}
+        <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+        <div class="jumbotron" style="margin-bottom: 0px; border-radius: 0px; background-color: #f2f2f2; padding-bottom: 0px">
+            <div class="container-fluid">
+                <div class="hero7sm hidden-lg hidden-md">
+                    <h1 class="mactext" style="font-size: 38px"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
+                    <h2 class="mactext" style="font-size: 26px; padding-left: 3vw">{{ object.text|safe }}</h2>
                 </div>
             </div>
-            <div class="jumbotron watchs2lg hidden-xs hidden-sm hidden-md" style="margin-bottom: 0px; border-radius: 0px; background-image: url('/static/img/iwatch/{{ object.img_lg }}')">
-                <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
-                    <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
-                    <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ object.text|safe }}</h2>
-                </div>
+        </div>
+        <div class="jumbotron watchs2lg hidden-xs hidden-sm hidden-md" style="margin-bottom: 0px; border-radius: 0px; background-image: url('/static/img/iwatch/{{ object.img_lg }}')">
+            <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
+                <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
+                <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ object.text|safe }}</h2>
             </div>
-            <div class="jumbotron watchs2md hidden-xs hidden-sm hidden-lg" style="margin-bottom: 0px; border-radius: 0px;  background-image: url('/static/img/iwatch/{{ object.img_md }}')">
-                <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
-                    <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
-                    <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ object.text|safe }}</h2>
-                </div>
+        </div>
+        <div class="jumbotron watchs2md hidden-xs hidden-sm hidden-lg" style="margin-bottom: 0px; border-radius: 0px;  background-image: url('/static/img/iwatch/{{ object.img_md }}')">
+            <div class="hero7lg hidden-xs hidden-sm" style="z-index: 2;">
+                <h1 class="mactext" style="font-size: 56px; font-weight: 500;"><i class="fa fa-apple" aria-hidden="true"></i>{{ object.head }}</h1>
+                <h2 class="mactext" style="font-size: 40px; padding-left: 3vw">{{ object.text|safe }}</h2>
             </div>
-            <div class="jumbotron watchs2sm hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-image: url('/static/img/iwatch/{{ object.img_sm }}')"></div>
-        {% endif %}
+        </div>
+        <div class="jumbotron watchs2sm hidden-md hidden-lg" style="margin-bottom: 0px; border-radius: 0px; background-image: url('/static/img/iwatch/{{ object.img_sm }}')"></div>
+    {% endif %}
 
 {% endblock %}
