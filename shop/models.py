@@ -9,7 +9,7 @@ class Goods(models.Model):
     img_lg = models.ImageField()
     img_md = models.ImageField(blank=True)
     img_sm = models.ImageField(blank=True)
-    category = models.ForeignKey('Category', verbose_name='Категория')
+    category = models.ForeignKey('Category', verbose_name='Категория', on_delete=models.CASCADE)
     zindex = models.BooleanField(default=0, verbose_name='Текст поверх картинки')
 
 class Category(models.Model):
